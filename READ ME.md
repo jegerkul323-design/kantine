@@ -14,4 +14,6 @@ for velkommen side og footer brukte jeg https://www.oslo-streetfood.no/en som li
 
 spurte ai også når det kom error og jeg ikke fant det ut på under 1 minutt
 
-og spurte ai om hvorfor linkene byttet farge til det originale hver gang jeg trykket på en. Sa at jeg skulle ta :visited som er da det defulter til lilla. 
+og spurte ai om hvorfor linkene byttet farge til det originale hver gang jeg trykket på en. Sa at jeg skulle ta :visited som er da det defulter til lilla.
+
+jeg brukte litt ai på om oss siden sin css jeg hadde lite tid som var litt min feil lowkey. Jeg kan alt som ble gjort av AI, jeg leste gjennom alt for å skjekke og det var ingenting nytt, så tweaket jeg litt på ting sånn at det så mer riktig ut 👍
