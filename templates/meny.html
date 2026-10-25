@@ -1,5 +1,30 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
+    <div class="menyalt">
+        <div class="menyintro">
+            <h1 class="overskriftmeny">Ukens meny</h1>
+            <p>Se hva vi serverer her på Beste kantinen</p>
+        </div>
+        {% for dag, matvarer in dagmeny.items() %}
+        <section class="dagmeny">
+            <h2 class="dagoversikt">{{ dag }}</h2>
+            <div class="gruppertmeny">
+                {% for vare in matvarer %}
+                <div class="menykort">
+                    <img src="{{ vare.image }}" alt="{{ vare.navn }}" class="bildemat">
+                    <div class="menyinfo">
+                        <h3>{{ vare.navn }}</h3>
+                        <p class="beskrivelse">{{ vare.beskrivelse }}</p>
+                        <div class="menybunn">
+                            <p class="pris">{{ vare.pris }} kr</p>
+                            <button type="button">Kjøp</button>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+        {% endfor %}
+    </div>
 {% endblock %}
