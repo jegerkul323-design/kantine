@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="gruppert">
+        {% for vare in matvarer %}
+            <div class="varene">
+                <img src="{{vare.image}}" class="bildemat">
+                <h1>{{vare.navn}}</h1>
+                <p class="pris">{{vare.pris}}</p>
+                <p class="beskrivelse">{{vare.beskrivelse}}</p>
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}

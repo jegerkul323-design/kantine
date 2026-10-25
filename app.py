@@ -1,4 +1,5 @@
-from flask import Flask, render_templates
+from flask import Flask, render_template
+from data import matvarer
 
 app = Flask(__name__)
 
@@ -11,12 +12,14 @@ def meny():
     return render_template("meny.html")
 
 @app.route('/om')
-def index():
+def om():
     return render_template("om.html")
 
 @app.route('/varer')
-def index():
-    return render_template("varer.html")
+def varer():
+    return render_template("varer.html", matvarer=matvarer)
 
 if __name__ == "__main__":
-    app.run
+    app.run()
+
+    

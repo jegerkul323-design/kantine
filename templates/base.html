@@ -8,17 +8,23 @@
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <a href="/">Velkommen</a>
-            <a href="/meny">Menyen vår</a>
-            <a href="/varer">Kjøp våre varer</a>
-            <a href="/om">Om oss</a>
-        </ul>
-    </nav>
+<header> 
+    <h1 class="overskrift">Kantine</h1> 
+    <div class="sider">
+        <nav>
+            <ul>
+                <a class="navigering" href="/">Velkommen</a>
+                <a class="navigering" href="/meny">Menyen vår</a>
+                <a class="navigering" href="/varer">Kjøp våre varer</a>
+                <a class="oss" href="/om">Om oss</a>
+            </ul>
+        </nav>
+    </div>
 
-    {% block content %} {% endblock %}
-
+</header> 
+    
+    {% block content %} 
+    {% endblock %}
 
 
 
