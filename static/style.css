@@ -76,3 +76,56 @@ body {
     }
 }
 
+footer {
+    background-color: black;
+    color: white;
+}
+
+.footerting {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: sans-serif;
+    p, a {
+        font-size: 20px;
+    }
+}
+.footerting > div {
+    margin: 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footerting a {
+    color: white;
+    transition: all 0.3s ease-out;
+}
+
+.footerting a:hover {
+    transition: all 0.3s ease;
+    font-size: 24px;
+}
+
+.footerting a:visited {
+    color: white;
+}
+
+.ikonene {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 128px;
+    a {
+        font-size: 20px;
+    }
+}
+
+.ikonene a {
+    text-decoration: none;
+}
+
+button {
+    padding: 12px 24px;
+    background-color: white;
+}

@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %} kantine {% endblock %}</title>
     <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
 <header> 
-    <h1 class="overskrift">Kantine</h1> 
+    <h1 class="overskrift">Beste kantinen</h1> 
     <div class="sider">
         <nav>
             <ul>
@@ -22,9 +23,46 @@
     </div>
 
 </header> 
+
+{% block content %}
+{% endblock %}
+
+<footer>
+    <div class="footerting">
+        <div class="adresse">
+            <h1>Adresse</h1>
+            <p>Beste kantinen</p>
+            <a href="https://www.google.com/maps/place/Pilestredet+56,+0167+Oslo/@59.924042,10.7294801,17z/data=!3m1!4b1!4m6!3m5!1s0x46416e7834093365:0xe226f1f90556dc81!8m2!3d59.9242685!4d10.731762!16s%2Fg%2F11c0vmv3q2?hl=no&entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D">Pilestredet 56, 0167 Oslo</a>
+        </div>
+        <div class="tider">
+            <h1>Tider vi er åpne</h1>
+            <p>Mandag-Fredag: 09-22</p>
+            <p>Lørdag: 09-18</p>
+            <p>Søndag: Stengt</p>
+        </div>
+        <div class="medier">
+            <h1>Sosiale medier</h1>
+            <div class="ikonene">
+                <a href="https://www.facebook.com/">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://x.com/">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+        <div class="kontaktfoot">
+            <h1>Kontakt oss</h1>
+            <p>E-post: </p>
+            <a href="mailto:example@example.com">kantine@kjøp.com</a>
+            <a href="tel:+47 000 00 000">+47 000 00 000</a>
+        </div>
+    </div>
+</footer>
     
-    {% block content %} 
-    {% endblock %}
 
 
 
