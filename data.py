@@ -136,10 +136,10 @@ onsdag = [
     },
     {
         "id": 9,
-        "navn": "Vaffel",
-        "pris": 30,
-        "beskrivelse": "Nystekt vaffel med syltetøy.",
-        "image": "https://placehold.co/600x400?text=Vaffel"
+        "navn": "Kylling vinger",
+        "pris": 50,
+        "beskrivelse": "Med mye hotsauce.",
+        "image": "https://www.denstoltehane.no/app/uploads/sites/2/2019/07/Hickorymarinerade-kycklingvingar.jpg"
     }
 ]
 
