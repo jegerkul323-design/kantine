@@ -1,16 +1,19 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <div class="gruppert">
-        {% for vare in matvarer %}
-            <div class="varene">
-                <img src="{{vare.image}}" class="bildemat">
-                <h1>{{vare.navn}}</h1>
-                <p class="pris">{{vare.pris}} kr</p>
-                <button>Kjøp</button>
-                <p class="beskrivelse">{{vare.beskrivelse}}</p>
-            </div>
-        {% endfor %}
+    <div class="alt">
+        <h1 class="overskriftmat">Våre faste matvarer</h1>
+        <div class="gruppert">
+            {% for vare in matvarer %}
+                <div class="varene">
+                    <img src="{{vare.image}}" class="bildemat">
+                    <h1>{{vare.navn}}</h1>
+                    <p class="pris">{{vare.pris}} kr</p>
+                    <button>Kjøp</button>
+                    <p class="beskrivelse">{{vare.beskrivelse}}</p>
+                </div>
+            {% endfor %}
+        </div>
     </div>
 
 {% endblock %}
