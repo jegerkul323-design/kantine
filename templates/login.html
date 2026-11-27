@@ -1,0 +1,29 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="login-side">
+    <h2>Logg inn</h2>
+
+    <form method="POST">
+        <label for="brukernavn">Brukernavn</label>
+        <input type="text" id="brukernavn" name="brukernavn" required>
+
+        <label for="passord">Passord</label>
+        <input type="password" id="passord" name="passord" required>
+
+        {% if feil %}
+            <p class="login-feil">{{ feil }}</p>
+        {% endif %}
+
+        <button type="submit">Logg inn</button>
+    </form>
+
+    <div class="registrer">
+        <p>Har du ikke en bruker?</p>
+        <a href="/register">Registrer deg her</a>
+    </div>
+</div>
+
+{% endblock %}
